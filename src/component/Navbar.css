@@ -1,0 +1,64 @@
+.navbar {
+    width: 100%;
+    background-color: rgb(54, 173, 24);
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: right;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color:cyan;
+  }
+  
+  
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  .navbar input[type=text] {
+    float: right;
+    padding: 6px;
+    padding-right: 250px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 6px;
+    font-size: 17px;
+  }
+  
+  .searchbtn{
+    font: bold;
+      color:rgb(0, 0, 0);
+      background-color: rgba(255, 242, 0, 0.949);
+      padding: 6px;
+      margin-top: 7px;
+      margin-right: 350px;
+      width: 90px;
+  }
+  .searchbtn a:hover{
+      background-color: white;
+      color: black;
+  }
+.iconflag{
+  display: auto;
+  margin-left: 6px;
+  margin-bottom: 5px;
+}
+#language{
+  background-color: #888888;
+  color: white;
+ 
+  
+}
+.white{
+  color: white;
+}

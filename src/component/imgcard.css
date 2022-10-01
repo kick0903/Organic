@@ -1,0 +1,40 @@
+.breadbox {
+    color: rgb(193, 188, 188);
+    height: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 3px black;
+    padding-top: 12px;
+    font-size: 15px;
+}
+.namecard{
+    color: green;
+}
+.desccard{
+    color: orange;
+}
+.imgcard{
+    height: 185px;
+    width: 185px;
+    margin-bottom: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.gallerycard{
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 6%);
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.gallery-body{
+    padding: 15px;
+    height: 323px;
+}
+.imgdetailcbig2{
+    width: 40%;
+    margin-top: 4%;
+    margin-bottom: auto;
+    cursor: pointer;
+}

@@ -23,7 +23,7 @@ const CardSlideO = (props) => {
         <div>
                 <a href="/productdetail"><img className="boxpic" src={props.img} alt="" /></a>
                 <h2>{props.cardtitle}</h2> <br />
-                <span className="checkt"> <img src={check} className="checki" />  In stock - 0.25 kg </span> 
+                <div className="centerslidetxt"> <img src={check} className="checki" /> <span className="iconslidetext"> In stock - 0.25 kg </span><br></br></div>
                 <b>{props.price}</b>
                 <div className="inputform">
                 <button onClick={() => setCount(Math.max(count - 1, 1))} className="minusb">-</button>

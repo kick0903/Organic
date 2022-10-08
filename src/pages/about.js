@@ -34,7 +34,7 @@ return(
                 
             </h1>
            <a href=""><img className="img" src={farmhouse} alt="" /></a> <br></br>
-            <h5 className='body'>
+            <h5 className='textabt'>
             A farm is an area of land where livestock (animals) are raised and crops
             (plants) are grown for use as food, fiber, and fuel. The people who own and work on the farm 
             are called farmers.
@@ -51,11 +51,11 @@ return(
             and other workers. Farmers do not take many vacations because there is always work  that needs to be done. <br></br> 
             </h5>
             <a href=""><img className="img" src={farm} alt="" /></a>
-            <h1 className='bold'>
+            <h1 className='textabt'>
             Benefits of working as a farmer <br></br>
             Working as a farmer has many potential benefits, including:
             </h1>
-            <h5 className='body'>
+            <h5 className='textabt'>
             Ability to work outside: Farmers spend most of their workday outside. They often wake early to feed animals, inspect crops and perform other agricultural duties. Farming can be a great profession for people who enjoy being outside.
             Increased activity: Farming requires a lot of physical exercise and activity. This can be a great role for professionals who enjoy staying active.
             Improved well-being: Being outside and performing physical activity could help improve your well-being.

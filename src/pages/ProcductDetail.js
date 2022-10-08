@@ -10,26 +10,26 @@ import img4 from "../img/skullcap.jpeg";
 import img5 from "../img/khoai-tay-organic-foodbox-2-scaled.jpg"
 
 const ProductDetail = () => {
-        $(function () {
-            $(".tabbtn").on( "click", function(e) { 
-                e.preventDefault();
-                $(".tabbtn").addClass("active");
-                $(".tabbtn1").removeClass("active")
-                $(".tab1").removeClass("hidetab")
-                $(".tab2").addClass("hidetab")
-            });
-            $(".tabbtn1").on( "click", function(e) { 
-                e.preventDefault();
-                $(".tabbtn1").addClass("active");
-                $(".tabbtn").removeClass("active")
-                $(".tab2").removeClass("hidetab");
-                $(".tab1").addClass("hidetab")
-            });
+    $(function () {
+        $(".tabbtn").on("click", function (e) {
+            e.preventDefault();
+            $(".tabbtn").addClass("active");
+            $(".tabbtn1").removeClass("active")
+            $(".tab1").removeClass("hidetab")
+            $(".tab2").addClass("hidetab")
         });
-        const [switchToggle, setToggle] = useState(false);
-        const ToggleClass = () => {
-            switchToggle ? setToggle(false) : setToggle(true);
-        }
+        $(".tabbtn1").on("click", function (e) {
+            e.preventDefault();
+            $(".tabbtn1").addClass("active");
+            $(".tabbtn").removeClass("active")
+            $(".tab2").removeClass("hidetab");
+            $(".tab1").addClass("hidetab")
+        });
+    });
+    const [switchToggle, setToggle] = useState(false);
+    const ToggleClass = () => {
+        switchToggle ? setToggle(false) : setToggle(true);
+    }
     return (
         <>
             <div className="breadbox">
@@ -38,7 +38,7 @@ const ProductDetail = () => {
             <div className="container pdtailb">
                 <div className="row">
                     <div className={switchToggle ? "imgdetailcbig" : "col-md-6"}>
-                        <a><img onClick={ToggleClass} className={switchToggle ? "imgdetailcbig1" : "imgdetailc"}  src={img2} alt="product img" /></a>
+                        <a><img onClick={ToggleClass} className={switchToggle ? "imgdetailcbig1" : "imgdetailc"} src={img2} alt="product img" /></a>
                     </div>
 
                     <div className={switchToggle ? "hidetab" : "col-md-6 pdetailc"}>
@@ -64,29 +64,31 @@ const ProductDetail = () => {
                         </div><br />
                         <text>Category:Organic Vegetable</text><br /><br />
                         <text>Why choose Star Organic Farm?</text>
-                        <div className="row">
-                        <div className="col-md-6">
-                        <div className="truckicon"><i class="fas fa-truck"></i></div>
-                        <div className="textbox1"><text className="bluetext">Super fast Delivery</text><br />
-                        <text>At your home in 2 hours</text></div>
-                        </div>
-                        <div className="col-md-6">
-                        <div className="truckicon"><i class="fa-solid fa-basket-shopping"></i></div>
-                        <div className="textbox1"><text className="bluetext">Guaranteed quality</text><br />
-                        <text>Harvest from organic farm.</text></div>
-                        </div>
+                        <div className="containerdetail">
+                            <div className="row detailtxtsize">
+                                <div className="col-md-6">
+                                    <div className="truckicon"><i class="fas fa-truck"></i></div>
+                                    <div className="textbox1"><text className="bluetext">Super fast Delivery</text><br />
+                                        <text>At your home in 2 hours</text></div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="truckicon"><i class="fa-solid fa-basket-shopping"></i></div>
+                                    <div className="textbox1"><text className="bluetext">Guaranteed quality</text><br />
+                                        <text>Harvest from organic farm.</text></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>    
+                </div>
             </div>
             <div className={switchToggle ? "hidetab" : "sameproduct"}>
-            <text className="sametext1">Similar Products</text>
-            <div className="sameitems1">
-            <ProductsCard img={img1} cardtitle="Organic Ansen cold pressed peanut oil" price="26.000 VND" />
-            <ProductsCard img={img5} cardtitle="Organic ginger" price="10.000 VND" />
-            <ProductsCard img={img3} cardtitle="Dried bamboo shoots" price="30.000 VND" />
-            <ProductsCard img={img4} cardtitle="Dried skullcap" price="20.000 VND" />
-            </div>
+                <text className="sametext1">Similar Products</text>
+                <div className="sameitems1">
+                    <ProductsCard img={img1} cardtitle="Organic Ansen cold pressed peanut oil" price="26.000 VND" />
+                    <ProductsCard img={img5} cardtitle="Organic ginger" price="10.000 VND" />
+                    <ProductsCard img={img3} cardtitle="Dried bamboo shoots" price="30.000 VND" />
+                    <ProductsCard img={img4} cardtitle="Dried skullcap" price="20.000 VND" />
+                </div>
             </div>
         </>
     )

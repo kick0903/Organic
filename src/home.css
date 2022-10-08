@@ -111,6 +111,7 @@ div h2 {
 }
 .checkt {
     display: inline;
+    margin: auto;
     margin-top: 10px;
     font-size: 8px;
 }
@@ -124,7 +125,7 @@ div b {
     background-color: #fff1f0;
     width: 130px;
     border-radius: 30px;
-    margin-left: 33px;
+    margin:auto;
     margin-top: 20px;
 }
 .minusb{
@@ -148,9 +149,9 @@ div b {
 }
 .cartbtn{
     background-color: #f3bc6f;
-    width: 150px;
+    width: 80%;
     border-radius: 30px;
-    margin-left: 25px; 
+    margin-left: 10%; 
     color: white;
     text-align: center;
     margin-top: 20px;

@@ -21,31 +21,31 @@ function Gallery(){
             </div>
             
 
-            <div className="grid">
-                <ImgCard img={vet3 } desc="Fresh from the farm" name="Pickle"/> 
-                <ImgCard img={vet5 } desc="carrots, Potatos, many more" name="Combo box"/> 
-                <ImgCard img={vet6 } desc="5 Pieces each" name="Carrot"/> 
-                <ImgCard img={vet7 } desc="500g " name="lettuce"/> 
-                <ImgCard img={vet3 } desc="Fresh from the farm" name="Pickle"/> 
-                <ImgCard img={vet5 } desc="carrots, Potatos, many more" name="Combo box"/> 
-                <ImgCard img={vet6 } desc="5 Pieces each" name="Carrot"/> 
-                <ImgCard img={vet7 } desc="500g " name="lettuce"/> 
-                <ImgCard img={vet3 } desc="Fresh from the farm" name="Pickle"/> 
-                <ImgCard img={vet5 } desc="carrots, Potatos, many more" name="Combo box"/> 
-                <ImgCard img={vet6 } desc="5 Pieces each" name="Carrot"/> 
-                <ImgCard img={vet7 } desc="500g " name="lettuce"/> 
-                <ImgCard img={vet3 } desc="Fresh from the farm" name="Pickle"/> 
-                <ImgCard img={vet5 } desc="carrots, Potatos, many more" name="Combo box"/> 
-                <ImgCard img={vet6 } desc="5 Pieces each" name="Carrot"/> 
-                <ImgCard img={vet7 } desc="500g " name="lettuce"/> 
-                <ImgCard img={vet3 } desc="Fresh from the farm" name="Pickle"/> 
-                <ImgCard img={vet5 } desc="carrots, Potatos, many more" name="Combo box"/> 
-                <ImgCard img={vet6 } desc="5 Pieces each" name="Carrot"/> 
-                <ImgCard img={vet7 } desc="500g " name="lettuce"/> 
-                <ImgCard img={vet3 } desc="Fresh from the farm" name="Pickle"/> 
-                <ImgCard img={vet5 } desc="carrots, Potatos, many more" name="Combo box"/> 
-                <ImgCard img={vet6 } desc="5 Pieces each" name="Carrot"/> 
-                <ImgCard img={vet7 } desc="500g " name="lettuce"/> 
+            <div className="row">
+            <div className="col-md-3"><ImgCard img={vet3 } desc="Fresh from the farm" name="Pickle"/> </div>
+            <div className="col-md-3"> <ImgCard img={vet5 } desc="carrots, Potatos, many more" name="Combo box"/></div> 
+            <div className="col-md-3"> <ImgCard img={vet6 } desc="5 Pieces each" name="Carrot"/></div> 
+            <div className="col-md-3"><ImgCard img={vet7 } desc="500g " name="lettuce"/> </div>
+            <div className="col-md-3"> <ImgCard img={vet3 } desc="Fresh from the farm" name="Pickle"/> </div>
+            <div className="col-md-3"> <ImgCard img={vet5 } desc="carrots, Potatos, many more" name="Combo box"/></div> 
+            <div className="col-md-3">  <ImgCard img={vet6 } desc="5 Pieces each" name="Carrot"/></div> 
+            <div className="col-md-3">  <ImgCard img={vet7 } desc="500g " name="lettuce"/> </div>
+            <div className="col-md-3">  <ImgCard img={vet3 } desc="Fresh from the farm" name="Pickle"/> </div>
+            <div className="col-md-3">  <ImgCard img={vet5 } desc="carrots, Potatos, many more" name="Combo box"/></div> 
+            <div className="col-md-3">  <ImgCard img={vet6 } desc="5 Pieces each" name="Carrot"/></div> 
+            <div className="col-md-3"> <ImgCard img={vet7 } desc="500g " name="lettuce"/> </div>
+            <div className="col-md-3"> <ImgCard img={vet3 } desc="Fresh from the farm" name="Pickle"/> </div>
+            <div className="col-md-3"> <ImgCard img={vet5 } desc="carrots, Potatos, many more" name="Combo box"/></div> 
+            <div className="col-md-3"> <ImgCard img={vet6 } desc="5 Pieces each" name="Carrot"/></div> 
+            <div className="col-md-3"> <ImgCard img={vet7 } desc="500g " name="lettuce"/> </div>
+            <div className="col-md-3"> <ImgCard img={vet3 } desc="Fresh from the farm" name="Pickle"/> </div>
+            <div className="col-md-3">   <ImgCard img={vet5 } desc="carrots, Potatos, many more" name="Combo box"/> </div>
+            <div className="col-md-3">   <ImgCard img={vet6 } desc="5 Pieces each" name="Carrot"/> </div>
+            <div className="col-md-3">   <ImgCard img={vet7 } desc="500g " name="lettuce"/> </div>
+            <div className="col-md-3">   <ImgCard img={vet3 } desc="Fresh from the farm" name="Pickle"/> </div>
+            <div className="col-md-3">   <ImgCard img={vet5 } desc="carrots, Potatos, many more" name="Combo box"/> </div>
+            <div className="col-md-3">   <ImgCard img={vet6 } desc="5 Pieces each" name="Carrot"/> </div>
+            <div className="col-md-3">  <ImgCard img={vet7 } desc="500g " name="lettuce"/> </div>
 
 
             </div>

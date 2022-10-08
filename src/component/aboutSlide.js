@@ -16,30 +16,30 @@ export default class AboutSlider extends Component {
       dots: true,
       infinite: true,
       speed: 500,
-      fade: true,
-      cssEase: 'linear'
+      slidesToShow: 1,
+      slidesToScroll: 1
     };
     return (
       <div>
         <h2> SOME OF OUR PRODUCTS</h2>
         <Slider {...settings}>
           <div>
-          <img className="slideimg" src={farm3} alt="" />
+          <img className="slideimg1" src={farm3} alt="" />
           </div>
           <div>
-          <img className="slideimg" src={farm4} alt="icon" />
+          <img className="slideimg1" src={farm4} alt="icon" />
           </div>
           <div>
-          <img className="slideimg" src={stockvet} alt="icon" />
+          <img className="slideimg1" src={stockvet} alt="icon" />
           </div>
           <div>
-          <img className="slideimg" src={farm3} alt="icon" />
+          <img className="slideimg1" src={farm3} alt="icon" />
           </div>
           <div>
-          <img className="slideimg" src={farm4} alt="icon" />
+          <img className="slideimg1" src={farm4} alt="icon" />
           </div>
           <div>
-          <img className="slideimg" src={stockvet} alt="icon" />
+          <img className="slideimg1" src={stockvet} alt="icon" />
           </div>
         </Slider>
       </div>

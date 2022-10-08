@@ -63,10 +63,11 @@ return(
             More independence: Many farmers operate their own farms. They can schedule their days, hire employees and make important decisions.
             </h5>
     </div>
+    <AboutSlider/>
     </div>
     
     
-    <AboutSlider/>
+
     
     </>
 )

@@ -24,8 +24,7 @@
 .boxpic1 {
     width: 140px;
     height: 140px;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
     transition: 0.3s;
     margin-top: 10px;
     margin-bottom: 20px;

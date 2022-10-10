@@ -2,12 +2,13 @@ import React from "react";
 import { useState } from "react";
 import $ from 'jquery';
 import "../pages/productdetail.css";
-import ProductsCard from "../component/productscard";
+import CardSlideO from "../component/cardo";
 import img1 from "../img/dau-phong-organic-ep-lanh-ansen-foodbox.jpg";
 import img2 from "../img/gung.jpg";
 import img3 from "../img/mangkho.jpg";
 import img4 from "../img/skullcap.jpeg";
 import img5 from "../img/khoai-tay-organic-foodbox-2-scaled.jpg"
+import Slider from "react-slick";
 
 const ProductDetail = () => {
     $(function () {
@@ -30,6 +31,40 @@ const ProductDetail = () => {
     const ToggleClass = () => {
         switchToggle ? setToggle(false) : setToggle(true);
     }
+    var settings = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      };
     return (
         <>
             <div className="breadbox">
@@ -83,12 +118,12 @@ const ProductDetail = () => {
             </div>
             <div className={switchToggle ? "hidetab" : "sameproduct"}>
                 <text className="sametext1">Similar Products</text>
-                <div className="sameitems1">
-                    <ProductsCard img={img1} cardtitle="Organic Ansen cold pressed peanut oil" price="26.000 VND" />
-                    <ProductsCard img={img5} cardtitle="Organic ginger" price="10.000 VND" />
-                    <ProductsCard img={img3} cardtitle="Dried bamboo shoots" price="30.000 VND" />
-                    <ProductsCard img={img4} cardtitle="Dried skullcap" price="20.000 VND" />
-                </div>
+                <Slider {...settings}>
+                    <CardSlideO img={img1} cardtitle="Organic Ansen cold pressed peanut oil" price="26.000 VND" />
+                    <CardSlideO img={img5} cardtitle="Organic ginger" price="10.000 VND" />
+                    <CardSlideO img={img3} cardtitle="Dried bamboo shoots" price="30.000 VND" />
+                    <CardSlideO img={img4} cardtitle="Dried skullcap" price="20.000 VND" />
+                    </Slider>
             </div>
         </>
     )

@@ -75,11 +75,12 @@ input::-webkit-inner-spin-button {
     background-color: #f3bc6f;
 }
 .tab1, .tab2{
-    height: 100px;
+    height: 20%;
     background-color: white;
     border: 1px solid black;
     padding-left: 10px;
     padding-top: 10px;
+    font-size: 90%;
 }
 .truckicon{
     display:inline-block;
@@ -93,11 +94,13 @@ input::-webkit-inner-spin-button {
 .fa-truck{
     color: white;
     margin-top: 17px;
+    font-size: 90%;
 }
 .textbox1{
     display: inline-block;
     position: absolute;
     margin-left: 5px;
+    font-size: 90%;
 }
 .bluetext{
     color: #17a2b8;

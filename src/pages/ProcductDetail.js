@@ -96,8 +96,8 @@ const ProductDetail = () => {
                             Deliver in 2 hours:<br />
                             Standard packing<br />
                             Guaranteed quality
-                        </div><br />
-                        <text>Category:Organic Vegetable</text><br /><br />
+                        </div>
+                        <text>Category:Organic Vegetable</text><br />
                         <text>Why choose Star Organic Farm?</text>
                         <div className="containerdetail">
                             <div className="row detailtxtsize">

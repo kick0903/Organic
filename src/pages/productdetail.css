@@ -16,6 +16,7 @@
     width: 500px;
     height: 600px;
     box-shadow: 0px 1px 2px black;
+    font-size: 100%;
 }
 
 .headtext{
@@ -141,4 +142,8 @@ input::-webkit-inner-spin-button {
 }
 .detailtxtsize{
     font-size: 90%;
+}
+
+.containerdetail{
+    font-size: 100%;
 }
